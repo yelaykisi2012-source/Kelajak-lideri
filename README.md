@@ -13,7 +13,7 @@ GitHub repozitoriyasini qo‘llaydigan Python hosting xizmatida web service yara
 - `KELAJAK_ADMIN_USERNAME`: ixtiyoriy; belgilanmasa `maslahatchi` ishlatiladi.
 - `KELAJAK_DB_PATH`: ixtiyoriy; doimiy diskdagi `kelajak_lideri.db` fayli yo‘li.
 
-`wsgi.py` xavfsiz production maxfiy kalitlari/paroli sozlanganini tekshiradi, so‘ng SQLite jadvallarini yaratib boshlang‘ich tadbirlarni qo‘shadi. Ma’lumotlar bazasi va maxfiy kalitlar GitHub’ga joylanmaydi. Hostingdagi yangi nusxa bo‘sh bazadan boshlanadi; mavjud bazadagi ma’lumotlarni ko‘chirish kerak bo‘lsa, bazani alohida va xavfsiz migratsiya qiling. Hosting diski vaqtinchalik bo‘lishi mumkin. Haqiqiy foydalanuvchilar ma’lumotlarini saqlash uchun hostingda doimiy diskni yoqing va `KELAJAK_DB_PATH` ni unga sozlang.
+`wsgi.py` xavfsiz production maxfiy kalitlari/paroli sozlanganini tekshiradi. Ilova import qilinganda SQLite jadvallari yaratiladi va boshlang‘ich tadbirlar qo‘shiladi. Ma’lumotlar bazasi va maxfiy kalitlar GitHub’ga joylanmaydi. Hostingdagi yangi nusxa bo‘sh bazadan boshlanadi; mavjud bazadagi ma’lumotlarni ko‘chirish kerak bo‘lsa, bazani alohida va xavfsiz migratsiya qiling. Hosting diski vaqtinchalik bo‘lishi mumkin. Haqiqiy foydalanuvchilar ma’lumotlarini saqlash uchun hostingda doimiy diskni yoqing va `KELAJAK_DB_PATH` ni unga sozlang.
 
 GitHub’ga push qilish saytni avtomatik ishga tushirmaydi; hosting xizmatida web service’ni alohida sozlang.
 

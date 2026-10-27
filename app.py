@@ -268,8 +268,9 @@ def admin():
 def admin_logout():
     session.clear(); flash("Administrator panelidan chiqdingiz."); return redirect(url_for("home"))
 
+init_db()
+
 if __name__ == "__main__":
-    init_db()
     print("KELAJAK LIDERI ishga tushmoqda: http://127.0.0.1:5000")
     print("Mahalliy sinov administrator login: maslahatchi")
     print("Mahalliy sinov administrator paroli: ChangeMe-2026!")
