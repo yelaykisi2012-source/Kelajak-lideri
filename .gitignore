@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+kelajak_lideri.db
+kelajak_lideri.db-journal
