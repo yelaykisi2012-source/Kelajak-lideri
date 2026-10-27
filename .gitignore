@@ -5,3 +5,6 @@ __pycache__/
 venv/
 kelajak_lideri.db
 kelajak_lideri.db-journal
+kelajak_lideri.db-shm
+kelajak_lideri.db-wal
+app_eski_py.txt

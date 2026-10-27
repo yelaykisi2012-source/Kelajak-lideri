@@ -5,7 +5,7 @@ from flask import Flask, request, redirect, url_for, session, flash, render_temp
 from werkzeug.security import generate_password_hash, check_password_hash
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-DB_PATH = os.path.join(BASE_DIR, "kelajak_lideri.db")
+DB_PATH = os.environ.get("KELAJAK_DB_PATH", os.path.join(BASE_DIR, "kelajak_lideri.db"))
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("KELAJAK_SECRET_KEY", "LOCAL-TEST-ONLY-change-before-deploy")
